@@ -5,3 +5,7 @@ body {
 blockquote {
 	font-style: italic;
 }
+
+th.sort {
+	cursor: pointer;
+}

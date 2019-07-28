@@ -46,7 +46,7 @@ chrome.webRequest.onHeadersReceived.addListener(function (details) {
 			url: details.url,
 			fileName: getFileName(details.url),
 			fileType: getFileType(details.url),
-			sizeInBytes: getContentLength(details.responseHeaders)
+			sizeInBytes: getContentLength(details.responseHeaders) * 1
 		};
 		images[details.tabId].push(image);
 	}
