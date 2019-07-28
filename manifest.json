@@ -1,0 +1,19 @@
+{
+	"name": "Image Analyzer",
+	"description": "Analyze images displayed on the page",
+	"version": "0.1",
+	"permissions": [
+		"activeTab",
+		"webRequest",
+		"<all_urls>"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html",
+		"default_title": "Image Analyzer"
+	},
+	"manifest_version": 2
+}
